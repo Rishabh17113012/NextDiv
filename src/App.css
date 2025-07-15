@@ -1,1 +1,13 @@
 @import "tailwindcss";
+     .perspective-1000 {
+          perspective: 1000px;
+        }
+        .hover\\:rotate-y-12:hover {
+          transform: rotateY(12deg) scale(1.1) translateY(-1rem);
+        }
+        .hover\\:-rotate-y-12:hover {
+          transform: rotateY(-12deg) scale(1.1) translateY(-1rem);
+        }
+        .shadow-3xl {
+          box-shadow: 0 35px 60px -12px rgba(0, 0, 0, 0.25);
+        }

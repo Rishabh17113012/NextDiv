@@ -9,6 +9,13 @@ import PrivacyPolicy from './components/Quick Links/PrivacyPolicy'
 import TermsOfService from './components/Quick Links/TermsOfService'
 import ScrollToTop from './components/ScrollToTop'
 import LoginPage from './pages/Login'
+import NextDivSignup from './pages/Register'
+import Dashboard from './components/Dashboard/dashboard'
+import GroupDetails from './components/Dashboard/Groupdetails'
+import InvitePage from './pages/InvitePage'
+import UserSettings from './pages/Settings'
+import AnalyticsPage from './pages/AnalyticsPage'
+import FoApp from './components/Modals/ExpenseFormModal'
 
 
 function App() {
@@ -24,6 +31,13 @@ function App() {
         <Route path='/privacy-policy' element={<PrivacyPolicy/>} />
         <Route path='/terms-of-service' element={<TermsOfService/>} />
         <Route path='/login' element={<LoginPage/>} />
+        <Route path='/register' element={<NextDivSignup />} />
+        <Route path='/dashboard' element={<Dashboard />} />
+        <Route path='/gd' element={<GroupDetails/> }/>
+        <Route path='/invite' element={<InvitePage/>}/>
+        <Route path='/setting' element={<UserSettings/>}/>
+        <Route path='/analytics' element={<AnalyticsPage/>}/>
+        <Route path='/foApp' element={<FoApp/>} />
  
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
